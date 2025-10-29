@@ -1,0 +1,21 @@
+/* Floating */
+@mixin floating(
+  $radius: 12px,
+  $shadow: 0 4px 12px rgba(0, 0, 0, 0.3),
+  $border: none
+) {
+  border-radius: $radius;
+  box-shadow: $shadow;
+  border: $border;
+}
+
+/* Grid dinamica */
+@mixin grid($elements: 4) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  * {
+    flex: 1 1 calc(100% / $elements);
+  }
+}
