@@ -1,0 +1,24 @@
+/* SPACING */
+$sizes: (
+  sm: 4px,
+  normal: 8px,
+  md: 12px,
+  lg: 20px,
+  xl: 32px,
+  xxl: 48px,
+);
+
+@each $name, $size in $sizes {
+  .padding-block-#{$name} {
+    padding-block: $size;
+  }
+  .padding-inline-#{$name} {
+    padding-inline: $size;
+  }
+  .margin-block-#{$name} {
+    margin-block: $size;
+  }
+  .margin-inline-#{$name} {
+    margin-inline: $size;
+  }
+}
