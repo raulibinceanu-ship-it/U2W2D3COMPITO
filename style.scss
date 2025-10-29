@@ -61,13 +61,22 @@ header {
     @include fadeDown(hero-img, 1s, 0.5s);
     max-width: 40%;
   }
+  .image {
+    overflow: hidden;
+  }
 }
 
 /* GRID  */
 .grid {
   padding: 40px;
   background: #fff;
-  @include grid(4);
+  @include grid(5);
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
 
   .item img {
     @include floating(10px, 0 3px 10px rgba(0, 0, 0, 0.15));

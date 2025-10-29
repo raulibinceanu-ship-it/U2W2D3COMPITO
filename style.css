@@ -354,6 +354,9 @@ header nav ul {
     transform: translateY(0);
   }
 }
+.hero .image {
+  overflow: hidden;
+}
 
 /* GRID  */
 .grid {
@@ -364,7 +367,14 @@ header nav ul {
   gap: 20px;
 }
 .grid * {
-  flex: 1 1 25%;
+  flex: 1 1 20%;
+}
+.grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .grid .item img {
   border-radius: 10px;
